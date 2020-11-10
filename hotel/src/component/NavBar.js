@@ -3,6 +3,8 @@ import logo from '../images/logo.svg';
 import { FaAlignRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
+
+
 export default class NavBar extends Component {
     state={
         isOpen : false
@@ -17,7 +19,7 @@ export default class NavBar extends Component {
                 <div className='nav-center'>
                     <div className='div-header'>
                         <Link to='/'>
-                            <img src={logo} alt='Beach Resort'/>                       
+                            <img src={logo} alt='Mascota hotel'/>                       
                         </Link>
                         <button type='button' className='nav-btn' onClick={this.handleToggle}>
                             <FaAlignRight className='nav-icon'/>
@@ -25,10 +27,10 @@ export default class NavBar extends Component {
                     </div>
                     <ul className={this.state.isOpen?'nav-links show-nav':'nav-links'}>
                         <li>
-                            <Link to='/'>Home</Link>
+                            <Link to='/'>Inicio</Link>
                         </li>
                         <li>
-                            <Link to='/rooms'>Rooms</Link>
+                            <Link to='/rooms'>Habitaciones</Link>
                         </li>
                     </ul>
                 </div>
